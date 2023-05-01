@@ -1,0 +1,23 @@
+{
+  "vendor": {
+    "details": {
+      "name": "Suman kumar",
+      "age": 24,
+      "Address": "Hello, I don't know",
+      "location": "Panjab"
+    },
+    "docs": {
+      "Addhar": {
+        "back": "Oops😮",
+        "front": "Oh!😋"
+      },
+      "Pan": {
+        "back": "Oops😮",
+        "front": "Oh!😋"
+      },
+      "Shop": {
+        "image": "URL"
+      }
+    }
+  }
+}
