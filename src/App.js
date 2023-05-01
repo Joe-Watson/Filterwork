@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function App() {
   const [searchItems, setSearch] = useState("");
   const [options, setOptions] = useState("location");
-  const [showImage, setShowImage] = useState(false);
+  const [showImage, setShowImage] = useState(-1);
 
   const filterSearch = data.filter((vendor) => {
     let isOptions = "";
@@ -62,13 +62,13 @@ export default function App() {
                 src={vendor.vendor.details.img}
                 alt={"user"}
                 className="card-image1"
-                onClick={setShowImage(true)}
+                onClick={()=>{setShowImage(-index)}
               />
               <div className="card-details1">
                 <h2>{vendor.vendor.details.name}</h2>
                 <p>{vendor.vendor.details.age}</p>
               </div>
-              {showImage && (
+              {showImage ==index && (
                 <div
                   className="full-screen-overlay"
                   onClick={() => {
